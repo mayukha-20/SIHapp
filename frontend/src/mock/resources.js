@@ -10,5 +10,11 @@ export const resources = [
   { id: 8, practitionerId: 5, title: 'Yoga Asanas', url: 'https://example.com/yoga.pdf' },
   { id: 9, practitionerId: 6, title: 'Post-Therapy Care', url: 'https://example.com/postcare.pdf' },
   { id: 10, practitionerId: 4, title: 'Herbal Therapy', url: 'https://example.com/herbal.pdf' },
+  // More resources for practitioner 4
+  { id: 11, practitionerId: 4, title: 'Abhyanga Checklist', url: 'https://example.com/abhyanga-checklist.pdf' },
+  { id: 12, practitionerId: 4, title: 'Diet Plan - Detox Week', url: 'https://example.com/detox-diet.pdf' },
+  { id: 13, practitionerId: 4, title: 'Home Care Guide', url: 'https://example.com/home-care.pdf' },
+  { id: 14, practitionerId: 4, title: 'Post Therapy Stretching', url: 'https://example.com/stretching.pdf' },
+  { id: 15, practitionerId: 4, title: 'Hydration Tips', url: 'https://example.com/hydration.pdf' },
 ];
 

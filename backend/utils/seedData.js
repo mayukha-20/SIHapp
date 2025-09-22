@@ -1,7 +1,8 @@
 // backend/utils/seedData.js
+// CommonJS seed data for placeholder routes. Mirrors frontend mocks for quick backend testing.
 
 // ------------------ Users ------------------
-export const users = [
+const users = [
   { id: 1, role: 'patient', name: 'Alice Sharma', email: 'alice@example.com', phone: '9876543210' },
   { id: 2, role: 'patient', name: 'Bob Verma', email: 'bob@example.com', phone: '9876543211' },
   { id: 3, role: 'patient', name: 'Charlie Rao', email: 'charlie@example.com', phone: '9876543212' },
@@ -15,7 +16,7 @@ export const users = [
 ];
 
 // ------------------ Centers ------------------
-export const centers = [
+const centers = [
   { id: 1, name: 'Ayurveda Wellness Center', location: 'Delhi' },
   { id: 2, name: 'Kerala Panchakarma Hub', location: 'Kerala' },
   { id: 3, name: 'Healing Touch Ayurveda', location: 'Mumbai' },
@@ -29,7 +30,7 @@ export const centers = [
 ];
 
 // ------------------ Appointments ------------------
-export const appointments = [
+const appointments = [
   { id: 1, patientId: 1, practitionerId: 4, centerId: 1, therapy: 'Abhyanga', date: '2025-09-22T10:00:00Z' },
   { id: 2, patientId: 2, practitionerId: 5, centerId: 2, therapy: 'Shirodhara', date: '2025-09-22T11:00:00Z' },
   { id: 3, patientId: 3, practitionerId: 6, centerId: 3, therapy: 'Pizhichil', date: '2025-09-22T12:00:00Z' },
@@ -43,21 +44,21 @@ export const appointments = [
 ];
 
 // ------------------ Therapy Notes ------------------
-export const therapyNotes = [
-  { id: 1, appointmentId: 1, vitals: 'BP:120/80', observations: 'Relaxed', steps: 'Abhyanga oil massage', recommendations: 'Rest 1 hour' },
-  { id: 2, appointmentId: 2, vitals: 'BP:118/78', observations: 'Calm', steps: 'Shirodhara', recommendations: 'Hydrate well' },
-  { id: 3, appointmentId: 3, vitals: 'BP:122/80', observations: 'Comfortable', steps: 'Pizhichil', recommendations: 'Avoid heavy food' },
-  { id: 4, appointmentId: 4, vitals: 'BP:120/80', observations: 'Energetic', steps: 'Kizhi', recommendations: 'Light walk' },
-  { id: 5, appointmentId: 5, vitals: 'BP:118/78', observations: 'Relaxed', steps: 'Udwarthanam', recommendations: 'Drink warm water' },
-  { id: 6, appointmentId: 6, vitals: 'BP:120/82', observations: 'Calm', steps: 'Abhyanga', recommendations: 'Rest 30 mins' },
-  { id: 7, appointmentId: 7, vitals: 'BP:119/77', observations: 'Relaxed', steps: 'Shirodhara', recommendations: 'Light meal' },
-  { id: 8, appointmentId: 8, vitals: 'BP:121/79', observations: 'Comfortable', steps: 'Pizhichil', recommendations: 'Hydrate well' },
-  { id: 9, appointmentId: 9, vitals: 'BP:117/76', observations: 'Energetic', steps: 'Kizhi', recommendations: 'Meditation' },
-  { id: 10, appointmentId: 10, vitals: 'BP:120/80', observations: 'Relaxed', steps: 'Udwarthanam', recommendations: 'Avoid caffeine' },
+const therapyNotes = [
+  { id: 1, appointmentId: 1, practitionerId: 4, vitals: 'BP:120/80', observations: 'Relaxed', steps: 'Abhyanga oil massage', recommendations: 'Rest 1 hour' },
+  { id: 2, appointmentId: 2, practitionerId: 5, vitals: 'BP:118/78', observations: 'Calm', steps: 'Shirodhara', recommendations: 'Hydrate well' },
+  { id: 3, appointmentId: 3, practitionerId: 6, vitals: 'BP:122/80', observations: 'Comfortable', steps: 'Pizhichil', recommendations: 'Avoid heavy food' },
+  { id: 4, appointmentId: 4, practitionerId: 4, vitals: 'BP:120/80', observations: 'Energetic', steps: 'Kizhi', recommendations: 'Light walk' },
+  { id: 5, appointmentId: 5, practitionerId: 5, vitals: 'BP:118/78', observations: 'Relaxed', steps: 'Udwarthanam', recommendations: 'Drink warm water' },
+  { id: 6, appointmentId: 6, practitionerId: 6, vitals: 'BP:120/82', observations: 'Calm', steps: 'Abhyanga', recommendations: 'Rest 30 mins' },
+  { id: 7, appointmentId: 7, practitionerId: 4, vitals: 'BP:119/77', observations: 'Relaxed', steps: 'Shirodhara', recommendations: 'Light meal' },
+  { id: 8, appointmentId: 8, practitionerId: 5, vitals: 'BP:121/79', observations: 'Comfortable', steps: 'Pizhichil', recommendations: 'Hydrate well' },
+  { id: 9, appointmentId: 9, practitionerId: 6, vitals: 'BP:117/76', observations: 'Energetic', steps: 'Kizhi', recommendations: 'Meditation' },
+  { id: 10, appointmentId: 10, practitionerId: 4, vitals: 'BP:120/80', observations: 'Relaxed', steps: 'Udwarthanam', recommendations: 'Avoid caffeine' },
 ];
 
 // ------------------ Feedback ------------------
-export const feedback = [
+const feedback = [
   { id: 1, patientId: 1, appointmentId: 1, symptom: 'Mild headache', sideEffect: 'None', notes: 'Feeling better' },
   { id: 2, patientId: 2, appointmentId: 2, symptom: 'Tension', sideEffect: 'None', notes: 'Relaxed' },
   { id: 3, patientId: 3, appointmentId: 3, symptom: 'Fatigue', sideEffect: 'None', notes: 'Energized' },
@@ -71,7 +72,7 @@ export const feedback = [
 ];
 
 // ------------------ Resources ------------------
-export const resources = [
+const resources = [
   { id: 1, practitionerId: 4, title: 'Abhyanga Guide', url: 'https://example.com/abhyanga.pdf' },
   { id: 2, practitionerId: 5, title: 'Shirodhara Guide', url: 'https://example.com/shirodhara.pdf' },
   { id: 3, practitionerId: 6, title: 'Pizhichil Instructions', url: 'https://example.com/pizhichil.pdf' },
@@ -85,7 +86,7 @@ export const resources = [
 ];
 
 // ------------------ Chat ------------------
-export const chat = [
+const chat = [
   { id: 1, patientId: 1, messages: [{ from: 'patient', text: 'How to prepare before therapy?' }, { from: 'bot', text: 'Drink warm water and avoid heavy food 2 hours prior.' }] },
   { id: 2, patientId: 2, messages: [{ from: 'patient', text: 'Number of sessions needed?' }, { from: 'bot', text: 'Typically 5–7 sessions per therapy are recommended.' }] },
   { id: 3, patientId: 3, messages: [{ from: 'patient', text: 'Any side-effects?' }, { from: 'bot', text: 'Some may feel mild fatigue, which is normal.' }] },
@@ -97,3 +98,13 @@ export const chat = [
   { id: 9, patientId: 9, messages: [{ from: 'patient', text: 'What is Kizhi?' }, { from: 'bot', text: 'Kizhi is a medicated herbal poultice therapy.' }] },
   { id: 10, patientId: 10, messages: [{ from: 'patient', text: 'How long is Shirodhara?' }, { from: 'bot', text: 'Typically 30–45 minutes per session.' }] },
 ];
+
+module.exports = {
+  users,
+  centers,
+  appointments,
+  therapyNotes,
+  feedback,
+  resources,
+  chat,
+};

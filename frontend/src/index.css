@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base styles */
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply font-sans bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50 text-slate-800;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .animate-shimmer {
+    background-image: theme('backgroundImage.shimmer');
+    background-size: 936px 100%;
+    @apply relative overflow-hidden;    
+    animation: shimmer 1.25s linear infinite;
+  }
+}
