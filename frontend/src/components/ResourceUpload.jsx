@@ -67,19 +67,19 @@ export default function ResourceUpload({ practitionerId }) {
       <form onSubmit={onSubmit} className="space-y-2">
         <input
           type="text"
-          className="w-full rounded-md border border-slate-200 bg-white p-2 text-sm shadow-sm transition focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-300"
+className="w-full rounded-md border border-amber-200 bg-white p-2 text-sm shadow-sm transition focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
           placeholder="Resource title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="file"
-          className="w-full text-sm file:mr-3 file:rounded-md file:border-0 file:bg-emerald-50 file:px-3 file:py-2 file:text-emerald-700 hover:file:bg-emerald-100"
+className="w-full text-sm file:mr-3 file:rounded-md file:border-0 file:bg-amber-50 file:px-3 file:py-2 file:text-amber-700 hover:file:bg-amber-100"
           onChange={(e) => setFile(e.target.files?.[0] ?? null)}
         />
         <button
           type="submit"
-          className="w-full rounded-md bg-emerald-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 disabled:opacity-50"
+className="w-full rounded-md bg-amber-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-amber-700 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 disabled:opacity-50"
           disabled={saving}
         >
           {saving ? "Uploading…" : "Upload (Mock)"}
@@ -93,7 +93,7 @@ export default function ResourceUpload({ practitionerId }) {
         ) : (
           <ul className="space-y-2">
             {items.map((r, idx) => (
-              <li key={r.id} className="rounded-md border border-slate-200 bg-white p-2 text-xs shadow-sm transition hover:-translate-y-0.5 hover:shadow-md animate-slide-up" style={{ animationDelay: `${idx * 40}ms` }}>
+<li key={r.id} className="rounded-md border border-amber-100 bg-gradient-to-b from-white to-amber-50/40 p-2 text-xs shadow-sm transition hover:-translate-y-0.5 hover:shadow-md animate-slide-up" style={{ animationDelay: `${idx * 40}ms` }}>
                 <div className="font-medium">{r.title}</div>
                 <div className="text-slate-500">{r.fileName || "(mock)"}</div>
               </li>

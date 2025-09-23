@@ -8,7 +8,8 @@
     height: 100%;
   }
   body {
-    @apply font-sans bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50 text-slate-800;
+    /* Warm Ayurvedic palette background */
+    @apply font-sans bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 text-slate-800;
   }
 }
 

@@ -17,8 +17,8 @@ export default function PatientList({ patients = [], selectedPatientId, onSelect
             className={
               "group flex w-full items-center justify-between rounded-lg border border-transparent px-3 py-2 text-left text-sm transition-all duration-200 " +
               (String(selectedPatientId) === String(p.id)
-                ? "bg-emerald-600 text-white shadow-md ring-1 ring-emerald-300"
-                : "bg-white hover:-translate-y-0.5 hover:shadow-md hover:ring-1 hover:ring-emerald-100")
+                ? "bg-amber-600 text-white shadow-md ring-1 ring-amber-300"
+                : "bg-white hover:-translate-y-0.5 hover:shadow-md hover:ring-1 hover:ring-amber-100")
             }
             onClick={() => {
               if (onSelect) onSelect(p.id);
@@ -26,7 +26,7 @@ export default function PatientList({ patients = [], selectedPatientId, onSelect
             }}
           >
             <span className="font-medium">{p.name}</span>
-            <span className="ml-2 hidden text-xs text-emerald-700 group-hover:inline">Details</span>
+<span className="ml-2 hidden text-xs text-amber-700 group-hover:inline">Details</span>
           </button>
         </li>
       ))}

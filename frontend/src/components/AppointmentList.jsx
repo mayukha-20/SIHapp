@@ -26,7 +26,7 @@ export default function AppointmentList({ appointments = [], selectedAppointment
           className={
             "flex w-full items-center justify-between rounded-md px-3 py-3 text-left transition-all duration-200 " +
             (String(selectedAppointmentId) === String(a.id)
-              ? "bg-emerald-50 ring-1 ring-emerald-200"
+              ? "bg-amber-50 ring-1 ring-amber-200"
               : "hover:-translate-y-0.5 hover:bg-white hover:shadow-sm")
           }
           style={{ animationDelay: `${idx * 40}ms` }}
